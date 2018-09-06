@@ -1,5 +1,18 @@
 img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 120px;
     padding: 0;
+    border-radius: 50%;
+}
+
+button {
+    border-radius: 50%;
+}
+
+body {
+    background-image: url("https://stmed.net/sites/default/files/wizard-wallpapers-28198-1137193.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+
 }

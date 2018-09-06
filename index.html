@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,63 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div class="container bg-success">
-        <button type="submit"><img id="obj1" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/201/large/vera-velichko-untitled-1.jpg?1481492866" alt="Submit"></button>
-        <button type="submit"><img id="obj2" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/203/large/vera-velichko-3.jpg?1481492568" alt="Submit"></button>
-        <button type="submit"><img id="obj3" class="potion" src="https://cdna.artstation.com/p/assets/images/images/004/222/202/large/vera-velichko-2.jpg?1481492563" alt="Submit"></button>
-        <button type="submit"><img id="obj4" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/209/large/vera-velichko-6.jpg?1481492581" alt="Submit"></button>
+    <div class="container h-100">
+        <p class="bg-secondary">Welcome to the potion game. Your objective will be to mix the correct amount of potions to create demons to help
+            you take over the world. For each succesful potion, you will receive one demon, however for each failure, you
+            will receive one Dumb Joker Troll (DJT for short), which will create chaos for your army.</p>
+
+        <div>
+            <div>
+                <p>Required potions mixture:
+                    <h2>
+                        <span id="required"></span>
+                    </h2>
+                </p>
+                <p>Your potions mixture:
+                    <span id="player"></span>
+                </p>
+            </div>
+            <div class="score">
+                <p>Demons:
+                    <span id="demon"></span>
+                </p>
+                <p>DJT:
+                    <span id="djt"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="potions">
+            <button type="submit">
+                <img id="obj1" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/201/large/vera-velichko-untitled-1.jpg?1481492866"
+                    alt="Submit">
+            </button>
+            <button type="submit">
+                <img id="obj2" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/203/large/vera-velichko-3.jpg?1481492568"
+                    alt="Submit">
+            </button>
+            <button type="submit">
+                <img id="obj3" class="potion" src="https://cdna.artstation.com/p/assets/images/images/004/222/202/large/vera-velichko-2.jpg?1481492563"
+                    alt="Submit">
+            </button>
+            <button type="submit">
+                <img id="obj4" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/209/large/vera-velichko-6.jpg?1481492581"
+                    alt="Submit">
+            </button>
+        </div>
 
     </div>
 
     <script>
-    $(document).ready(
+        $(document).ready(
 
-    )
-    
 
+
+        )
     </script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
