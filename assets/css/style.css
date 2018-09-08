@@ -1,3 +1,8 @@
+body, html {
+    height: 100%;
+    font-family: 'Orbitron', cursive;
+}
+
 img {
     height: 150px;
     width: 120px;
@@ -7,12 +12,35 @@ img {
 
 button {
     border-radius: 50%;
+    margin: 3%;
 }
 
-body {
+.container-fluid {
     background-image: url("https://stmed.net/sites/default/files/wizard-wallpapers-28198-1137193.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     color: whitesmoke;
+    height: 100%;
+}
 
+.desc {
+    font-size: 2.3vh;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.spec {
+    margin-top: 35%;
+}
+
+.requirements {
+    width: 40%;
+}
+
+#required {
+    align-content: center;
+}
+
+.win-loss {
+    padding-right: 10%;
 }

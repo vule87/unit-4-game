@@ -8,57 +8,60 @@
     <title>Potion Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Philosopher" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container h-100">
-        <p class="bg-secondary">Welcome to the potion game. Your objective will be to mix the correct amount of potions to create demons to help
-            you take over the world. For each succesful potion, you will receive one demon, however for each failure, you
-            will receive one Dumb Joker Troll (DJT for short), which will create chaos for your army.</p>
+    <div class="container-fluid">
+        <div class="container h-100">
+            <p class="desc">Welcome to the potion game. Your objective will be to mix the correct amount of potions to create demons to help
+                you take over the world. For each succesful potion, you will receive one demon, however for each failure,
+                you will receive one Dumb Joker Troll (DJT for short), which will create chaos for your army.</p>
 
-        <div>
-            <div>
-                <p>Required potions mixture:
-                    <h2>
-                        <span id="required"></span>
-                    </h2>
-                </p>
-                <p>Your potions mixture:
-                    <span id="player"></span>
-                </p>
+            <div class="spec">
+                <div class="requirements float-left">
+                    <p>Required potions mixture:
+                        <h2>
+                            <span id="required">10</span>
+                        </h2>
+                    </p>
+                    <p>Your potions mixture:
+                        <span id="player"></span>
+                    </p>
+                </div>
+                <div class="score float-right win-loss">
+                    <p>Demons:
+                        <span id="demon">0</span>
+                    </p>
+                    <p>DJT:
+                        <span id="djt">0</span>
+                    </p>
+                </div>
             </div>
-            <div class="score">
-                <p>Demons:
-                    <span id="demon"></span>
-                </p>
-                <p>DJT:
-                    <span id="djt"></span>
-                </p>
+
+            <div class="potions d-flex justify-content-center fixed-bottom">
+                <button type="submit">
+                    <img id="obj1" class="potion center" src="https://cdnb.artstation.com/p/assets/images/images/004/222/201/large/vera-velichko-untitled-1.jpg?1481492866"
+                        alt="Submit">
+                </button>
+                <button type="submit">
+                    <img id="obj2" class="potion center" src="https://cdnb.artstation.com/p/assets/images/images/004/222/203/large/vera-velichko-3.jpg?1481492568"
+                        alt="Submit">
+                </button>
+                <button type="submit">
+                    <img id="obj3" class="potion center" src="https://cdna.artstation.com/p/assets/images/images/004/222/202/large/vera-velichko-2.jpg?1481492563"
+                        alt="Submit">
+                </button>
+                <button type="submit">
+                    <img id="obj4" class="potion center" src="https://cdnb.artstation.com/p/assets/images/images/004/222/209/large/vera-velichko-6.jpg?1481492581"
+                        alt="Submit">
+                </button>
             </div>
-        </div>
 
-        <div class="potions">
-            <button type="submit">
-                <img id="obj1" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/201/large/vera-velichko-untitled-1.jpg?1481492866"
-                    alt="Submit">
-            </button>
-            <button type="submit">
-                <img id="obj2" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/203/large/vera-velichko-3.jpg?1481492568"
-                    alt="Submit">
-            </button>
-            <button type="submit">
-                <img id="obj3" class="potion" src="https://cdna.artstation.com/p/assets/images/images/004/222/202/large/vera-velichko-2.jpg?1481492563"
-                    alt="Submit">
-            </button>
-            <button type="submit">
-                <img id="obj4" class="potion" src="https://cdnb.artstation.com/p/assets/images/images/004/222/209/large/vera-velichko-6.jpg?1481492581"
-                    alt="Submit">
-            </button>
         </div>
-
     </div>
-
     <script>
         $(document).ready(
 
